@@ -1,0 +1,55 @@
+{
+    "name": "scene",
+    "objects": [
+        {
+            "name": "Cube1",
+            "type": "cube",
+            "position": [
+                0.5,
+                0.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "script": "scripts/spin.py"
+        },
+        {
+            "name": "Cube2",
+            "type": "cube",
+            "position": [
+                8.5,
+                0.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "script": "scripts/test.py"
+        }
+    ]
+}
