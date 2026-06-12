@@ -842,7 +842,7 @@ class PythonStudioEditor(tk.Tk):
             version_path = self.download_remote_version_file()
             update_info = json.loads(version_path.read_text(encoding="utf-8"))
             remote_version = update_info.get("version") or update_info.get("editor_version")
-            editor_link = update_info.get("editor_link") or update_info.get("download_url")
+            editor_link = update_info.get("editor_link") or update_info.get("download_url") or UPDATE_EDITOR_URL
 
             if not remote_version:
                 self.clear_update_cache()
@@ -852,11 +852,6 @@ class PythonStudioEditor(tk.Tk):
             if not self.is_newer_version(remote_version, APP_VERSION):
                 self.clear_update_cache()
                 self.log(f"Editor is up to date: v{APP_VERSION}")
-                return
-
-            if not editor_link:
-                self.clear_update_cache()
-                self.log("Editor update skipped: downloaded version.json has no editor_link.")
                 return
 
             should_update = messagebox.askyesno(
