@@ -1,0 +1,31 @@
+{
+    "name": "test",
+    "objects": [
+        {
+            "name": "test",
+            "type": "cube",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                50.0,
+                50.0,
+                50.0
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                2.0
+            ],
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "texture": "editor/textures/base_texture.jpg",
+            "script": "scripts/spin.py"
+        }
+    ]
+}
